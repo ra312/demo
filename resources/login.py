@@ -5,7 +5,7 @@ import streamlit_authenticator as stauth
 
 
 def return_authentication_status():
-    with open('/workspaces/demo/resources/accounts.yaml') as file:
+    with open('resources/accounts.yaml') as file:
         config = yaml.load(file, Loader=SafeLoader)
     authenticator = stauth.Authenticate(
         config['credentials'],
