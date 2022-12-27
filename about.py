@@ -4,7 +4,7 @@ import streamlit as st
 
 def write():
     """Used to write the about page in the app.py file"""
-    st.title("Awesome App")
+    st.title("Welcome to Awesome App")
     st.markdown(
         """
         A new way of life
