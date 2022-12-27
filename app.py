@@ -13,6 +13,7 @@ def main():
     (name, authentication_status, username) = authenticator.login(
         'Login', 'main')
     if authentication_status:
+        authenticator.logout('Logout', 'main')
         ast.write_page(about)
     elif authentication_status == False:
         st.error('Username/password is incorrect')
